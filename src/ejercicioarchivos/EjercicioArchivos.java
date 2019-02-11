@@ -7,6 +7,7 @@ package ejercicioarchivos;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,7 +24,8 @@ public class EjercicioArchivos {
     public static void main(String[] args) {
         // TODO code application logic here
     File archivo=new File("x/y/Letras.txt");
-   /* System.out.println(archivo.exists());
+  File archivo2=new File("x/y/Texto.txt");
+    /* System.out.println(archivo.exists());
     System.out.println(archivo.isDirectory());
     if(archivo.isDirectory()){
         String lista[]=archivo.list();
@@ -33,8 +35,9 @@ public class EjercicioArchivos {
     Scanner input;
         try {
               System.out.println(archivo.exists());
-            input = new Scanner(archivo);
-            
+              input = new Scanner(archivo);
+             PrintStream out=new PrintStream(archivo2);
+             out.println("JEJEJEJE");
           
             int contador=0;
             while(input.hasNext()){

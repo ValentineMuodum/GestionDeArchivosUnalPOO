@@ -25,7 +25,7 @@ public class EjercicioArchivos {
         // TODO code application logic here
     File archivo=new File("x/y/Letras.txt");
   File archivo2=new File("x/y/Texto.txt");
-    /* System.out.println(archivo.exists());
+     /*System.out.println(archivo.exists());
     System.out.println(archivo.isDirectory());
     if(archivo.isDirectory()){
         String lista[]=archivo.list();
@@ -37,11 +37,12 @@ public class EjercicioArchivos {
               System.out.println(archivo.exists());
               input = new Scanner(archivo);
              PrintStream out=new PrintStream(archivo2);
-             out.println("JEJEJEJE");
+            
+            
           
             int contador=0;
             while(input.hasNext()){
-                System.out.println(input.next());
+                out.println(input.next());
             contador++;
             }
                 System.out.println(contador);
